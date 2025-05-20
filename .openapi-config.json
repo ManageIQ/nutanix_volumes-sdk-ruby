@@ -1,0 +1,8 @@
+{
+  "gemName": "nutanix_volumes",
+  "gemAuthor": "ManageIQ Developers",
+  "gemSummary": "Nutanix Volumes API",
+  "gemDescription": "Ruby gem for Nutanix Volume Management APIs",
+  "gemLicense": "Apache-2.0",
+  "useAutoload": true
+}
