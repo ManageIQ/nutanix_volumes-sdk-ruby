@@ -1,0 +1,40 @@
+name: Update gem from OpenAPI Spec
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '0 0 * * 0'
+
+jobs:
+  openapi-generate:
+    runs-on: ubuntu-latest
+    env:
+      INPUT_SPEC_VERSION: v4.0
+    steps:
+    - uses: actions/checkout@v5
+    - name: Set up system
+      run: sudo apt install -y xq
+    - name: OpenAPI Generate
+      run: bin/openapi-generate
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v7
+      with:
+        add-paths: |
+          .openapi-generator
+          docs
+          lib
+          README.md
+          spec
+        commit-message: Update nutanix_volumes gem
+        branch: openapi_generate
+        author: ManageIQ Bot <bot@manageiq.org>
+        committer: ManageIQ Bot <bot@manageiq.org>
+        delete-branch: true
+        labels: enhancement
+        assignees: agrare
+        push-to-fork: miq-bot/nutanix_volumes-sdk-ruby
+        title: Update nutanix_volumes gem
+        body: |
+          Update the nutanix_volumes-sdk-ruby gem from the nutanix_volumes openapi-spec:
+          https://developers.nutanix.com/api-reference?namespace=volumes&version=${{ env.INPUT_SPEC_VERSION }}
+        token: ${{ secrets.PR_TOKEN }}
