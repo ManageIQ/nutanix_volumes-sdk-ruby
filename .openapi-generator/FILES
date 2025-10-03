@@ -1,10 +1,5 @@
-.gitignore
-.gitlab-ci.yml
-.openapi-generator-ignore
 .rspec
 .rubocop.yml
-.travis.yml
-Gemfile
 README.md
 Rakefile
 docs/AssociateCategory202Response.md
@@ -128,7 +123,6 @@ docs/VolumesV40ConfigNvmfClientAttachment.md
 docs/VolumesV40ConfigPauseVolumeGroupSynchronousReplicationApiResponse.md
 docs/VolumesV40ConfigProtocol.md
 docs/VolumesV40ConfigResumeVolumeGroupSynchronousReplicationApiResponse.md
-docs/VolumesV40ConfigResumeVolumeGroupSynchronousReplicationApiResponseData.md
 docs/VolumesV40ConfigRevertSpec.md
 docs/VolumesV40ConfigRevertVolumeGroupApiResponse.md
 docs/VolumesV40ConfigSharingStatus.md
@@ -288,7 +282,6 @@ lib/nutanix_volumes/models/volumes_v40_config_nvmf_client_attachment.rb
 lib/nutanix_volumes/models/volumes_v40_config_pause_volume_group_synchronous_replication_api_response.rb
 lib/nutanix_volumes/models/volumes_v40_config_protocol.rb
 lib/nutanix_volumes/models/volumes_v40_config_resume_volume_group_synchronous_replication_api_response.rb
-lib/nutanix_volumes/models/volumes_v40_config_resume_volume_group_synchronous_replication_api_response_data.rb
 lib/nutanix_volumes/models/volumes_v40_config_revert_spec.rb
 lib/nutanix_volumes/models/volumes_v40_config_revert_volume_group_api_response.rb
 lib/nutanix_volumes/models/volumes_v40_config_sharing_status.rb
@@ -444,7 +437,6 @@ spec/models/volumes_v40_config_nvmf_client_attachment_spec.rb
 spec/models/volumes_v40_config_nvmf_client_spec.rb
 spec/models/volumes_v40_config_pause_volume_group_synchronous_replication_api_response_spec.rb
 spec/models/volumes_v40_config_protocol_spec.rb
-spec/models/volumes_v40_config_resume_volume_group_synchronous_replication_api_response_data_spec.rb
 spec/models/volumes_v40_config_resume_volume_group_synchronous_replication_api_response_spec.rb
 spec/models/volumes_v40_config_revert_spec_spec.rb
 spec/models/volumes_v40_config_revert_volume_group_api_response_spec.rb
