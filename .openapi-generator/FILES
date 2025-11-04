@@ -162,6 +162,7 @@ lib/nutanix_volumes/api/iscsi_clients_api.rb
 lib/nutanix_volumes/api/volume_groups_api.rb
 lib/nutanix_volumes/api_client.rb
 lib/nutanix_volumes/api_error.rb
+lib/nutanix_volumes/api_model_base.rb
 lib/nutanix_volumes/configuration.rb
 lib/nutanix_volumes/models/associate_category202_response.rb
 lib/nutanix_volumes/models/associate_category4_xx_response.rb
