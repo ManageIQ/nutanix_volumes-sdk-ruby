@@ -11,7 +11,7 @@ jobs:
     env:
       INPUT_SPEC_VERSION: v4.0
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Set up system
       run: sudo apt install -y xq
     - name: OpenAPI Generate
