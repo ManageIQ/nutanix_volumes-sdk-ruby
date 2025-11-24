@@ -17,11 +17,11 @@ module NutanixVolumes
   class VolumesV40ConfigSharingStatus
     SHARED = "SHARED".freeze
     NOT_SHARED = "NOT_SHARED".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [SHARED, NOT_SHARED, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [SHARED, NOT_SHARED, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string

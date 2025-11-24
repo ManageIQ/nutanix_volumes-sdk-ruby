@@ -21,11 +21,11 @@ module NutanixVolumes
     AVG = "AVG".freeze
     COUNT = "COUNT".freeze
     LAST = "LAST".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [SUM, MIN, MAX, AVG, COUNT, LAST, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [SUM, MIN, MAX, AVG, COUNT, LAST, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string

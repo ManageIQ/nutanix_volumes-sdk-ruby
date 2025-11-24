@@ -17,11 +17,11 @@ module NutanixVolumes
   class VolumesV40ConfigVolumeGroupAttachmentSite
     PRIMARY = "PRIMARY".freeze
     SECONDARY = "SECONDARY".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [PRIMARY, SECONDARY, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [PRIMARY, SECONDARY, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string
