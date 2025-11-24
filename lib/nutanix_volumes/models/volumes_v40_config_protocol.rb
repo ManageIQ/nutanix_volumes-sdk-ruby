@@ -18,11 +18,11 @@ module NutanixVolumes
     NOT_ASSIGNED = "NOT_ASSIGNED".freeze
     ISCSI = "ISCSI".freeze
     NVMF = "NVMF".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [NOT_ASSIGNED, ISCSI, NVMF, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [NOT_ASSIGNED, ISCSI, NVMF, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string

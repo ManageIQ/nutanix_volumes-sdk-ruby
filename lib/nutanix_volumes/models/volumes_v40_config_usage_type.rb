@@ -19,11 +19,11 @@ module NutanixVolumes
     INTERNAL = "INTERNAL".freeze
     TEMPORARY = "TEMPORARY".freeze
     BACKUP_TARGET = "BACKUP_TARGET".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [USER, INTERNAL, TEMPORARY, BACKUP_TARGET, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [USER, INTERNAL, TEMPORARY, BACKUP_TARGET, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string

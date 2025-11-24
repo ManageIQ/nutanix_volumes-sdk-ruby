@@ -17,11 +17,11 @@ module NutanixVolumes
   class VolumesV40ConfigAuthenticationType
     CHAP = "CHAP".freeze
     NONE = "NONE".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [CHAP, NONE, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [CHAP, NONE, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string

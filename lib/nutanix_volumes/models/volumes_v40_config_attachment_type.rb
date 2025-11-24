@@ -18,11 +18,11 @@ module NutanixVolumes
     NONE = "NONE".freeze
     DIRECT = "DIRECT".freeze
     EXTERNAL = "EXTERNAL".freeze
-    _UNKNOWN = "$UNKNOWN".freeze
-    _REDACTED = "$REDACTED".freeze
+    UNKNOWN = "$UNKNOWN".freeze
+    REDACTED = "$REDACTED".freeze
 
     def self.all_vars
-      @all_vars ||= [NONE, DIRECT, EXTERNAL, _UNKNOWN, _REDACTED].freeze
+      @all_vars ||= [NONE, DIRECT, EXTERNAL, UNKNOWN, REDACTED].freeze
     end
 
     # Builds the enum from string
