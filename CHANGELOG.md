@@ -4,6 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.1] - 2025-11-24
+### Added
+- Add a post-generate script to fix invalid constants ([#15](https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/pull/15))
+
+### Fixed
+- Fix `_UNKNOWN`/`_REDACTED` constants ([#16](https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/pull/16))
+
 ## [0.2.0] - 2025-11-24
 ### Added
 - Add License ([#7](https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/pull/7))
@@ -19,5 +26,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release
 
+[0.2.1]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/tree/v0.1.0
