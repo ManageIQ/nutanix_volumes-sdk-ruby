@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SED_EXE="$([[ "$OSTYPE" == "darwin"* ]] && echo "gsed" || echo "sed")"
+
+${SED_EXE} -i 's/_UNKNOWN/UNKNOWN/g'   $1
+${SED_EXE} -i 's/_REDACTED/REDACTED/g' $1

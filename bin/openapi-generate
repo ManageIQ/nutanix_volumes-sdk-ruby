@@ -23,4 +23,8 @@ rm -rf ./docs ./lib ./spec
 
 # Generate the gem from the current openapi-spec
 input_spec=https://developers.nutanix.com/api/v1/namespaces/volumes/versions/$INPUT_SPEC_VERSION/yaml
-java -jar $OPENAPI_GENERATOR_JAR generate --input-spec $input_spec --skip-validate-spec --generator-name ruby --config .openapi-config.json
+
+# Fixup issues with the generated classes
+export RUBY_POST_PROCESS_FILE="$PWD/bin/openapi-generate-ruby-post-process"
+
+java -jar $OPENAPI_GENERATOR_JAR generate --enable-post-process-file --input-spec $input_spec --skip-validate-spec --generator-name ruby --config .openapi-config.json
