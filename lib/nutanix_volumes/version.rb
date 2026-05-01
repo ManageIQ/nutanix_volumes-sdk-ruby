@@ -11,5 +11,5 @@ Generator version: 7.9.0
 =end
 
 module NutanixVolumes
-  VERSION = '0.1.0'
+  VERSION = '0.1.1'
 end
