@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-05-04
+### Removed
+- Delete unused swagger yaml file ([#25](https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/pull/25))
+
 ## [0.1.1] - 2026-05-01
 ### Fixed
 - Drop docs from published gem ([#24](https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/pull/24)
@@ -13,5 +17,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release
 
+[0.1.2]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/ManageIQ/nutanix_volumes-sdk-ruby/tree/v0.1.0
